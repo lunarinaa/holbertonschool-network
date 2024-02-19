@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#pings IP address passed as an argument
+
+[ -z "$1" ] && { echo "Usage: $(basename "$0") <IP_ADDRESS>"; exit 1; }
+ping -c 5 "$1"
